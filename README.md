@@ -7,6 +7,20 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Installation
+1. Prerequisites
+    1. ubuntu server
+    2. LAMP stack
+    3. NodeJS
+    4. Composer
+2. Clone this repo in the root of the Apache web server.
+3. In MySQL create a new database named **tasks_db**
+3. Edit the database configuration inside the .env file
+4. install Composer dependencies
+5. install NODE dependencies
+6. Seed the SQL TASK table by running this command: **php artisan db:seed --class=TaskSeeder**
+7. Seed the SQL PROJECT table by running this command: **php artisan db:seed --class=ProjectSeeder**
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
